@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
       isLoading = true;
     });
     final prompt =
-        'You are an amazing tech speaker that have spoken at over 1000 tech events. You have been task to generate compelling topics with absracts on the following event. Take into account the experience level to the audience which is $selectedValue on ${selectedArea.join(', ')}. Theme: ${_textEditController.text}';
+        'You are an amazing tech speaker that have spoken at over 1000 tech events. You have been task to generate compelling topics with abstracts on the following event. Take into account the experience level to the audience which is $selectedValue on ${selectedArea.join(', ')}. Theme: ${_textEditController.text}';
     final content = [Content.text(prompt)];
     final response = await model.generateContent(content);
 
